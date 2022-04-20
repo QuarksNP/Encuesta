@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang = "es">
+  <link rel= "stylesheet" href="style.css">
+  <head>
+    <meta charset = "utf-8" />
+    <title>Formulario de encuesta</title>
+  </head>
+
+  <main>
+      <body>
+          <header> 
+              <h1 id="title">Mobile phone brand</h1>
+              <p id="description">We want to know which brand is the most used by the general public.</p>
+          </header>
+
+              <section>
+                  <form id ="survey-form">
+                      <div class = "group">
+                        <label id="name-label" for="name">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+  
+                        <label id="email-label" for="mail">email</label>
+                        <input type="email" name="mail" id="email" class="form-control" placeholder="Enter your email" type="email" required/>
+  
+                        <label id="number-label" for="number">age</label>
+                        <input type="number" name="number" id="number" class="form-control" placeholder="Enter your age" min="8" max="99">
+                      </div>
+
+                      <div>
+                          <select name="role" id="dropdown" class="form-control" required>
+                              <option disabled selected value>please choose your device brand</option>
+                              <option value="samsung">Samsung</option>
+                              <option value="apple">Apple</option>
+                              <option value="xiomi">Xiomi</option>
+                              <option value="huawei">Huawei</option>
+                              <option value="lg">LG</option>
+                              <option value="motorola">Motorola</option>
+                              <option value="sony">Sony</option>
+                              <option value="other">Other</option>
+                          </select>
+                      </div>
+
+                      <div>
+                          <p>According to the brand you chose, would you recommend it?</p>
+
+                           <label>
+                            <input class="input-radio" name="user-recommend" value="definitely" type="radio" checked/>Definitely
+                           </label>
+
+                           <label>
+                               <input class="input-radio" name="user-recommend" value="maybe" type="radio" checked/>Maybe
+                           </label>
+
+                           <label>
+                               <input class="input-radio" name="user-recommend" value="not" type="radio" checked/>Of course not
+                           </label>     
+                      </div>
+
+                      <div> 
+                          <select name="like" id="Like" required>
+                              <option disabled selected value>Choose what you like the most about the device</option>
+                              <option value="camera">Camera</option>
+                              <option value="schreend">Schreend</option>
+                              <option value="speakers">Speakers</option>
+                              <option value="battery">Battery</option>
+                              <option value="software">Software</option>
+                              <option value="any">Any</option>
+                              <option value="other">Other</option>
+                          </select>
+                      </div>
+
+                      <div>
+                          <p>What would you like to add at to devices?
+                              <span>(check all if you want it)</span>                           
+                          </p>
+
+                          <label><input class="input-checkbox" type="checkbox" name="prefer" value="waterproof">Waterproof</label>
+                          <label><input class="input-checkbox" type="checkbox" name="prefer" value="all crystal">All crystal</label>
+                          <laber><input class="input-checkbox" type="checkbox" name="prefer" value="perfomance">Perfomance</laber>
+                      </div>
+
+                      <div>
+                          <p>Any comments or surggestions?</p>
+                          <textarea id="comments" name = "comment" class="input-textarea" placeholder="Enter your comment here"> </textarea>
+                      </div>
+
+                      <div>
+                          <button  class="submit-button" type="submit" id="submit">Submit</button>
+                      </div>
+
+           
+                  </form>
+              </section>
+      </body>
+  </main>
+
+
+
